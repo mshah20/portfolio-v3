@@ -30,7 +30,7 @@ const HomePage = () => {
                     
                     <ul className="group">
                         {userData.projects.map((project) => {
-                            return <li className="group-hover:opacity-30 group-hover:hover:opacity-100 transition-all duration-500" key={project.title} ><ProjectCard url={project.url} githubURL={project.githubURL} imageURL={project.imageURL} title={project.title} description={project.description} skills={project.skills} /></li>
+                            return <li className="sm:group-hover:opacity-30 sm:group-hover:hover:opacity-100 transition-all duration-500" key={project.title} ><ProjectCard url={project.url} githubURL={project.githubURL} imageURL={project.imageURL} title={project.title} description={project.description} skills={project.skills} /></li>
                         })}
                     </ul>
 
@@ -49,7 +49,7 @@ const HomePage = () => {
 
                     <ul className="group">
                         {userData.courses.map((course) => {
-                            return <li className="group-hover:opacity-70 group-hover:hover:opacity-100 transition-all duration-500" key={course.title}><CourseCard title={course.title} languages={course.languages} skills={course.skills} /></li>
+                            return <li className="sm:group-hover:opacity-70 sm:group-hover:hover:opacity-100 transition-all duration-500" key={course.title}><CourseCard title={course.title} languages={course.languages} skills={course.skills} /></li>
                         })}
                     </ul>
                 </section>

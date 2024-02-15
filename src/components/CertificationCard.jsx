@@ -34,15 +34,19 @@ const CertificationCard = ({ title, status, company, link }) => {
                 <div>
                     <div className="flex">
                         <div className="mr-1">{title}</div>
-                        {getStatus(status)}
+                        
                     </div>
                     <div className="text-xs italic">{company}</div>
                 </div>
-                {link && (
-                    <div className="flex text-indigo-300 hover:*:text-indigo-200">
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </div>
-                )}
+                <div className="flex items-center">
+                    {getStatus(status)}
+                    {link && (
+                        <div className="ml-2 flex text-indigo-300 hover:*:text-indigo-200">
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </div>
+                    )}
+                </div>
+                
                 
             </div> 
         </a>

@@ -1,6 +1,6 @@
 const CourseCard = ({ title, languages, skills }) => {
     return (
-        <div className="mt-4 p-4 rounded-xl select-none hover:bg-indigo-900">
+        <div className="mt-4 p-4 flex flex-col items-center rounded-xl select-none hover:bg-indigo-900">
             <div className="flex">
                 <div className="text-lg mr-1">{title}</div>
                 <ul className="flex text-xs">
@@ -10,9 +10,9 @@ const CourseCard = ({ title, languages, skills }) => {
                 </ul>
             </div>
             
-            <ul className="flex text-xs mt-4">
+            <ul className="flex flex-wrap text-xs mt-4">
                     {skills.map((skill) => {
-                        return <li key={skill} className="px-3 py-1 mx-1 rounded-xl bg-gradient-to-tr from-purple-900 via-pink-900 to-yellow-900 hover:from-purple-600 hover:via-pink-600 hover:to-yellow-600">{skill}</li>
+                        return <li key={skill} className="px-3 py-1 mx-1 mb-2 rounded-xl bg-gradient-to-tr from-purple-900 via-pink-900 to-yellow-900 hover:from-purple-600 hover:via-pink-600 hover:to-yellow-600">{skill}</li>
                     })}
             </ul>
         </div>
