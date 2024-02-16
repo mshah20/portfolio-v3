@@ -6,6 +6,22 @@ import ProjectCard from "./ProjectCard";
 import CourseCard from "./CourseCard";
 import CertificationCard from "./CertificationCard";
 import Contact from "./Contact";
+import weatherPage from "../media/weather-search.png";
+import financePage from "../media/finance-app.png";
+import portfolioV2Page from "../media/portfolio-v2.png";
+
+const getImage = (title) => {
+    switch(title) {
+        case "Weather Search":
+            return weatherPage;
+        case "Finance Tracker":
+            return financePage;
+        case "Old Portfolio":
+            return portfolioV2Page;
+        default:
+            break;
+    }
+}
 
 const HomePage = () => {
     return (
@@ -35,7 +51,7 @@ const HomePage = () => {
                     
                     <ul className="group">
                         {userData.projects.map((project) => {
-                            return <li className="sm:group-hover:opacity-30 sm:group-hover:hover:opacity-100 transition-all duration-500" key={project.title} ><ProjectCard url={project.url} githubURL={project.githubURL} imageURL={project.imageURL} title={project.title} description={project.description} skills={project.skills} /></li>
+                            return <li className="sm:group-hover:opacity-30 sm:group-hover:hover:opacity-100 transition-all duration-500" key={project.title} ><ProjectCard url={project.url} githubURL={project.githubURL} image={getImage(project.title)} title={project.title} description={project.description} skills={project.skills} /></li>
                         })}
                     </ul>
 

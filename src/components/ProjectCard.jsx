@@ -2,11 +2,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ProjectCard = ({ url, githubURL, imageURL, title, description, skills }) => {
+const ProjectCard = ({ url, githubURL, image, title, description, skills }) => {
     return (
         <div className="mt-4 py-8 px-4 rounded-xl flex flex-col items-center sm:flex-row select-none hover:bg-indigo-900">
             <div id="image-container" className="w-64 h-32">
-                <img src={imageURL} alt="Project" className="w-64 h-32 min-w-64 rounded-lg"/>
+                <img src={image} alt="Project" className="w-64 h-32 min-w-64 rounded-lg"/>
             </div>
             <div className="min-h-32 w-full px-6 flex flex-col justify-between">
                 <div className="mt-4 flex justify-center items-center sm:justify-start sm:mt-0">

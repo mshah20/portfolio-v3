@@ -6,20 +6,17 @@ export const userData = {
     "projects": [{
         "url": "https://mshah20.github.io/weather-app/",
         "githubURL": "https://github.com/mshah20/weather-app",
-        "imageURL": "/media/weather-search.png",
         "title": "Weather Search",
         "description": "Whether it's the next city over or across the world, find out the weather with soothing visuals.",
         "skills": ["React", "Javascript", "Axios", "CSS", "API"]
     }, {
         "githubURL": "https://github.com/mshah20/finance-app",
-        "imageURL": "/media/finance-app.png",
         "title": "Finance Tracker",
         "description": "Track your finances to create the perfect budget. Add transactions to see when and where your money goes.",
         "skills": ["React", "Node.js", "Express", "pgAdmin4", "PostgreSQL"]
     }, {
         "url": "https://mshah20.github.io/portfolio-page/",
         "githubURL": "https://github.com/mshah20/portfolio-page/",
-        "imageURL": "/media/portfolio-v2.png",
         "title": "Old Portfolio",
         "description": "My previous portfolio page.",
         "skills": ["React", "Javascript", "HTML", "CSS"]
