@@ -10,10 +10,10 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        karla: ["Karla", "sans-serif"]
       },
       keyframes: {
         wiggle: {
-          // '0%, 100%': { transform: 'translateX(2px)' },
           '50%': { transform: 'translateX(3px)' },
         }
       }

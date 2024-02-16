@@ -5,28 +5,33 @@ import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "./ProjectCard";
 import CourseCard from "./CourseCard";
 import CertificationCard from "./CertificationCard";
+import Contact from "./Contact";
 
 const HomePage = () => {
     return (
-        <div id="homepage-container" className="w-full py-24 bg-indigo-950 font-poppins text-indigo-100 flex justify-center">
-            <div id="sections-container" className="w-[850px] max-w-[90%]">
+        <div id="homepage-container" className="w-full py-24 bg-indigo-950 font-karla text-indigo-100 flex justify-center">
+            <div id="sections-container" className="w-[750px] max-w-[90%]">
                 <section id="header-container">
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col sm:flex-row sm:justify-between items-center">
                         <div>
                             <div className="text-5xl font-bold ">{userData.name}</div>
                             <div className="text-xl">{userData.jobTitle} @{userData.company}</div>
                         </div>
-                        <div className="text-2xl">
-                            <FontAwesomeIcon icon={faGithub} />
-                            <FontAwesomeIcon icon={faEnvelope} className="ml-4" />
+                        <div className="text-2xl mt-2">
+                            <a href="https://github.com/mshah20/" target="_blank" rel="noreferrer" title="Github">
+                                <FontAwesomeIcon icon={faGithub} className="text-indigo-300 hover:text-indigo-100"/>
+                            </a>
+                            <a href="mailto:mshah058.work@gmail.com" title="Email">
+                                <FontAwesomeIcon icon={faEnvelope} className="ml-4 text-indigo-300 hover:text-indigo-100" />
+                            </a>
                         </div>
                     </div>
                     
-                    <div className="mt-6">{userData.about}</div>
+                    <div className="mt-6 text-center sm:text-left">{userData.about}</div>
                 </section>
 
                 <section id="projects-container" className="mt-24">
-                    <div className="font-bold text-lg">Projects</div>
+                    <h2 className="font-bold text-lg">Projects</h2>
                     
                     <ul className="group">
                         {userData.projects.map((project) => {
@@ -34,18 +39,18 @@ const HomePage = () => {
                         })}
                     </ul>
 
-                    <a href="https://github.com/mshah20/" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/mshah20?tab=repositories" target="_blank" rel="noreferrer">
                         <div className="mt-4 mx-auto text-center group w-fit relative">
-                            View More Projects
+                            <span>View More Projects</span>
                             <FontAwesomeIcon icon={faArrowRight} className="mx-2 group-hover:animate-wiggle" />
                             <div className="w-full h-0 mt-1 absolute group-hover:h-1 transition-all duration-300 ease-in-out bg-gradient-to-tr from-purple-900 via-pink-900 to-yellow-900" />
-                            <div className="w-full h-1 mt-1 absolute group-hover:h-0 bg-indigo-950" />
+                            <div className="w-full h-1 mt-1 absolute group-hover:h-0 transparent" />
                         </div>
                     </a>
                 </section>
 
                 <section id="courses-container" className="mt-24">
-                    <div className="font-bold text-lg">Notable Courses</div>
+                    <h2 className="font-bold text-lg">Notable Courses</h2>
 
                     <ul className="group">
                         {userData.courses.map((course) => {
@@ -55,7 +60,7 @@ const HomePage = () => {
                 </section>
 
                 <section id="certifications-container" className="mt-24">
-                    <div className="font-bold text-lg">Certifications</div>
+                    <h2 className="font-bold text-lg">Certifications</h2>
 
                     <ul>
                         {userData.certifications.map((certification) => {
@@ -64,6 +69,8 @@ const HomePage = () => {
                     </ul>
                 </section>
             </div>
+
+            <Contact />
         </div>
     );
 }

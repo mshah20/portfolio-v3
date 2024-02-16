@@ -2,7 +2,7 @@ const CourseCard = ({ title, languages, skills }) => {
     return (
         <div className="mt-4 p-4 flex flex-col items-center rounded-xl select-none hover:bg-indigo-900">
             <div className="flex">
-                <div className="text-lg mr-1">{title}</div>
+                <h3 className="text-lg mr-1">{title}</h3>
                 <ul className="flex text-xs">
                     {languages.map((language) => {
                         return <li key={language} className="m-auto px-3 py-1 mx-1 rounded-xl bg-gradient-to-tr from-green-600 to-cyan-600 hover:from-green-500 hover:to-cyan-500">{language}</li>

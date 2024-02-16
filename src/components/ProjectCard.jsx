@@ -10,21 +10,20 @@ const ProjectCard = ({ url, githubURL, imageURL, title, description, skills }) =
             </div>
             <div className="min-h-32 w-full px-6 flex flex-col justify-between">
                 <div className="mt-4 flex justify-center items-center sm:justify-start sm:mt-0">
-                    <div className="text-lg">{title}</div>
-                    <ul className="flex text-indigo-300 hover:*:text-indigo-200">
+                    <h3 className="text-lg">{title}</h3>
+                    <ul className="flex text-indigo-300 text-lg hover:*:text-indigo-200">
                         <li className="mx-2">{githubURL && (<a href={githubURL} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>)}</li>
                         <li>{url && (<a href={url} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>)}</li>
                     </ul>
                 </div>
                 
-                <div className="my-4 mx-auto sm:mx-0 flex flex-wrap text-sm text-indigo-300 text-center sm:text-left">{description}</div>
+                <p className="my-4 mx-auto sm:mx-0 flex flex-wrap text-sm text-indigo-300 text-center sm:text-left">{description}</p>
                 
                 <ul className="flex flex-wrap text-xs justify-center sm:justify-start">
                     {skills.map((skill) => {
                         return <li key={skill} className="px-3 py-1 mx-1 mt-2 rounded-xl bg-gradient-to-tr from-purple-900 via-pink-900 to-yellow-900 hover:from-purple-600 hover:via-pink-600 hover:to-yellow-600">{skill}</li>
                     })}
                 </ul>
-                
             </div>
         </div>
     );

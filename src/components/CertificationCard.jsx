@@ -16,11 +16,11 @@ const getLogo = (company) => {
 const getStatus = (status) => {
     switch(status) {
         case "Completed":
-            return (<div className="m-auto text-xs px-3 py-1 mx-1 rounded-xl bg-green-700">{status}</div>);
+            return (<p className="m-auto text-xs px-3 py-1 mx-1 rounded-xl bg-green-600">{status}</p>);
         case "In-Progress":
-            return (<div className="m-auto text-xs px-3 py-1 mx-1 rounded-xl bg-yellow-700">{status}</div>);
+            return (<p className="m-auto text-xs px-3 py-1 mx-1 rounded-xl bg-yellow-600">{status}</p>);
         case "Planned":
-            return (<div className="m-auto text-xs px-3 py-1 mx-1 rounded-xl bg-blue-700">{status}</div>);
+            return (<p className="m-auto text-xs px-3 py-1 mx-1 rounded-xl bg-blue-600">{status}</p>);
         default:
             break;
     }
@@ -33,10 +33,9 @@ const CertificationCard = ({ title, status, company, link }) => {
             <div className="w-full flex justify-between items-center">
                 <div>
                     <div className="flex">
-                        <div className="mr-1">{title}</div>
-                        
+                        <h3 className="mr-1">{title}</h3>
                     </div>
-                    <div className="text-xs italic">{company}</div>
+                    <p className="text-xs italic">{company}</p>
                 </div>
                 <div className="flex items-center">
                     {getStatus(status)}
@@ -46,8 +45,6 @@ const CertificationCard = ({ title, status, company, link }) => {
                         </div>
                     )}
                 </div>
-                
-                
             </div> 
         </a>
     );

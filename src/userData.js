@@ -8,8 +8,8 @@ export const userData = {
         "githubURL": "https://github.com/mshah20/weather-app",
         "imageURL": "/media/weather-search.png",
         "title": "Weather Search",
-        "description": "Whether it's next the city over or across the world, find out the weather with soothing visuals.",
-        "skills": ["React", "Javascript", "Axios", "CSS"]
+        "description": "Whether it's the next city over or across the world, find out the weather with soothing visuals.",
+        "skills": ["React", "Javascript", "Axios", "CSS", "API"]
     }, {
         "githubURL": "https://github.com/mshah20/finance-app",
         "imageURL": "/media/finance-app.png",
@@ -38,17 +38,17 @@ export const userData = {
         "title": "Data Structures",
         "description": "",
         "languages": ["C++"],
-        "skills": ["Sorting Algorithms", "Vectors", "Stacks", "Queues", "Trees", "Graphs", "Heaps"]
-    }, {
-        "title": "Computer Architecture",
-        "description": "",
-        "languages": ["Assembly"],
-        "skills": ["Memory", "ALU", "CPU", "Binary"]
-    }, {
-        "title": "Operating System Principles",
-        "description": "",
-        "languages": ["C"],
-        "skills": ["Processes", "Threads", "Scheduling", "File Systems"]
+        "skills": ["Sort Algorithms", "Vectors", "Queues", "Trees", "Heaps", "Big O Notation"]
+    // }, {
+    //     "title": "Computer Architecture",
+    //     "description": "",
+    //     "languages": ["Assembly"],
+    //     "skills": ["Memory", "ALU", "CPU", "Binary"]
+    // }, {
+    //     "title": "Operating System Principles",
+    //     "description": "",
+    //     "languages": ["C"],
+    //     "skills": ["Processes", "Threads", "Scheduling", "File Systems"]
     }, {
         "title": "Database Management I & II",
         "description": "",
