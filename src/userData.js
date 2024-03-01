@@ -10,10 +10,11 @@ export const userData = {
         "description": "Whether it's the next city over or across the world, find out the weather with soothing visuals.",
         "skills": ["React", "Javascript", "Axios", "CSS", "API"]
     }, {
-        "githubURL": "https://github.com/mshah20/finance-app",
-        "title": "Finance Tracker",
-        "description": "Track your finances to create the perfect budget. Add transactions to see when and where your money goes.",
-        "skills": ["React", "Node.js", "Express", "pgAdmin4", "PostgreSQL"]
+        "url": "https://mshah20.github.io/patch-hq",
+        "githubURL": "https://github.com/mshah20/patch-hq",
+        "title": "Patch HQ",
+        "description": "Stay up to date with updates to your favorite games, all in one place.",
+        "skills": ["React", "TailwindCSS", "Axios", "Express.js", "MongoDB"]
     }, {
         "url": "https://mshah20.github.io/portfolio-page/",
         "githubURL": "https://github.com/mshah20/portfolio-page/",
@@ -36,16 +37,6 @@ export const userData = {
         "description": "",
         "languages": ["C++"],
         "skills": ["Sort Algorithms", "Vectors", "Queues", "Trees", "Heaps", "Big O Notation"]
-    // }, {
-    //     "title": "Computer Architecture",
-    //     "description": "",
-    //     "languages": ["Assembly"],
-    //     "skills": ["Memory", "ALU", "CPU", "Binary"]
-    // }, {
-    //     "title": "Operating System Principles",
-    //     "description": "",
-    //     "languages": ["C"],
-    //     "skills": ["Processes", "Threads", "Scheduling", "File Systems"]
     }, {
         "title": "Database Management I & II",
         "description": "",
@@ -69,6 +60,6 @@ export const userData = {
     }, {
         "title": "Meta Back-End Developer Professional Certificate",
         "company": "Meta",
-        "status": "Planned"
+        "status": "In-Progress"
     }]
 }

@@ -7,15 +7,15 @@ import CourseCard from "./CourseCard";
 import CertificationCard from "./CertificationCard";
 import Contact from "./Contact";
 import weatherPage from "../media/weather-search.png";
-import financePage from "../media/finance-app.png";
+import patchHQPage from "../media/patch-hq.png";
 import portfolioV2Page from "../media/portfolio-v2.png";
 
 const getImage = (title) => {
     switch(title) {
         case "Weather Search":
             return weatherPage;
-        case "Finance Tracker":
-            return financePage;
+        case "Patch HQ":
+            return patchHQPage;
         case "Old Portfolio":
             return portfolioV2Page;
         default:
