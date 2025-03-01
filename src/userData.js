@@ -4,11 +4,10 @@ export const userData = {
     "company": "myhome",
     "about": "Currently pursuing a Bachelor of Science in Computer Science at Florida International University (FIU). Oh, and probably starting a new project.",
     "projects": [{
-        "url": "https://mshah20.github.io/weather-app/",
-        "githubURL": "https://github.com/mshah20/weather-app",
-        "title": "Weather Search",
-        "description": "Whether it's the next city over or across the world, find out the weather with soothing visuals.",
-        "skills": ["React", "Javascript", "Axios", "CSS", "API"]
+        "githubURL": "https://github.com/mshah20/eduverse",
+        "title": "Eduverse",
+        "description": "A modern Learning Management System tailored for students and teachers alike.",
+        "skills": ["React", "TailwindCSS", "Node", "Firebase", "Firestore"]
     }, {
         "url": "https://mshah20.github.io/patch-hq",
         "githubURL": "https://github.com/mshah20/patch-hq",
@@ -16,11 +15,11 @@ export const userData = {
         "description": "Stay up to date with updates to your favorite games, all in one place.",
         "skills": ["React", "TailwindCSS", "Axios", "Express.js", "MongoDB"]
     }, {
-        "url": "https://mshah20.github.io/portfolio-page/",
-        "githubURL": "https://github.com/mshah20/portfolio-page/",
-        "title": "Old Portfolio",
-        "description": "My previous portfolio page.",
-        "skills": ["React", "Javascript", "HTML", "CSS"]
+        "url": "https://mshah20.github.io/weather-app/",
+        "githubURL": "https://github.com/mshah20/weather-app",
+        "title": "Weather Search",
+        "description": "Whether it's the next city over or across the world, find out the weather with soothing visuals.",
+        "skills": ["React", "Javascript", "Axios", "CSS", "API"]
     }],
     "courses": [{
         "title": "Programming I & II",

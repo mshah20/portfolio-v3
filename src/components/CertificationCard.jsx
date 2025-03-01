@@ -28,7 +28,7 @@ const getStatus = (status) => {
 
 const CertificationCard = ({ title, status, company, link }) => {
     return (
-        <a href={link} target="_blank" rel="noreferrer" className="flex items-center mt-4 p-4 rounded-xl select-none bg-indigo-900 opacity-100 hover:bg-indigo-800">
+        <a href={link} target="_blank" rel="noreferrer" className="flex items-center mt-4 p-4 rounded-xl select-none bg-gray-800 opacity-100 hover:bg-gray-700">
             {getLogo(company)}
             <div className="w-full flex justify-between items-center">
                 <div>
@@ -40,7 +40,7 @@ const CertificationCard = ({ title, status, company, link }) => {
                 <div className="flex items-center">
                     {getStatus(status)}
                     {link && (
-                        <div className="ml-2 flex text-indigo-300 hover:*:text-indigo-200">
+                        <div className="ml-2 flex text-gray-300 hover:*:text-emerald-400">
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </div>
                     )}

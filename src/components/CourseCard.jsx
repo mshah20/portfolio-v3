@@ -1,6 +1,6 @@
 const CourseCard = ({ title, languages, skills }) => {
     return (
-        <div className="mt-4 p-4 flex flex-col items-center rounded-xl select-none hover:bg-indigo-900">
+        <div className="mt-4 p-4 flex flex-col items-center rounded-xl select-none hover:bg-gray-800">
             <div className="flex">
                 <h3 className="text-lg mr-1">{title}</h3>
                 <ul className="flex text-xs">

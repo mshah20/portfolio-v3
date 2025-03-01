@@ -26,22 +26,22 @@ const Contact = () => {
     return (
         <>
             {showContact && (
-                <div className="hidden lg:flex flex-col items-end fixed bottom-0 right-12 text-indigo-300">
+                <div className="hidden lg:flex flex-col items-end fixed bottom-0 right-12 text-gray-300">
                     <ul>
                         <li>
                             <a href="https://github.com/mshah20/" target="_blank" rel="noreferrer" className="flex items-center group float-right">
-                                <span className="mx-2 opacity-0 group-hover:text-indigo-100 group-hover:opacity-100 transition-all duration-200">Github</span>
-                                <FontAwesomeIcon icon={faGithub} className="group-hover:text-indigo-100 text-2xl" />
+                                <span className="mx-2 opacity-0 group-hover:text-emerald-400 group-hover:opacity-100 transition-all duration-200">Github</span>
+                                <FontAwesomeIcon icon={faGithub} className="group-hover:text-emerald-400 text-2xl" />
                             </a>
                         </li>
                         <li>
                             <a href="mailto:mshah058.work@gmail.com" className="my-4 flex items-center group float-right">
-                                <span className="mx-2 opacity-0 group-hover:text-indigo-100 group-hover:opacity-100 transition-all duration-200">Email</span>
-                                <FontAwesomeIcon icon={faEnvelope} className="group-hover:text-indigo-100 text-2xl relative" />
+                                <span className="mx-2 opacity-0 group-hover:text-emerald-400 group-hover:opacity-100 transition-all duration-200">Email</span>
+                                <FontAwesomeIcon icon={faEnvelope} className="group-hover:text-emerald-400 text-2xl relative" />
                             </a>
                         </li>
                     </ul>
-                    <div className="w-1 h-12 mr-3 bg-indigo-300"></div>
+                    <div className="w-1 h-12 mr-3 bg-gray-300"></div>
                 </div>
             )}
         </>
