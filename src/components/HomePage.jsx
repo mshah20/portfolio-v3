@@ -1,27 +1,10 @@
 import { userData } from "../userData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "./ProjectCard";
 import CourseCard from "./CourseCard";
 import CertificationCard from "./CertificationCard";
 import Contact from "./Contact";
-import eduversePage from "../media/eduverse.png";
-import patchHQPage from "../media/patch-hq.png";
-import weatherPage from "../media/weather-search.png";
-
-const getImage = (title) => {
-    switch(title) {
-        case "Eduverse":
-            return eduversePage;
-        case "Patch HQ":
-            return patchHQPage;
-        case "Weather Search":
-            return weatherPage;
-        default:
-            break;
-    }
-}
 
 const HomePage = () => {
     return (
@@ -33,17 +16,19 @@ const HomePage = () => {
                             <div className="text-5xl font-bold ">{userData.name}</div>
                             <div className="text-xl">{userData.jobTitle} @{userData.company}</div>
                         </div>
+                        
                         <div className="text-2xl text-gray-300 mt-2 hover:*:text-emerald-400">
-                            <a href="https://github.com/mshah20/" target="_blank" rel="noreferrer" title="Github">
-                                <FontAwesomeIcon icon={faGithub}/>
-                            </a>
-                            <a href="mailto:mshah058.work@gmail.com" title="Email">
-                                <FontAwesomeIcon icon={faEnvelope} className="ml-4" />
-                            </a>
+                            {userData.contact.map((contact) => {
+                                return (
+                                    <a href={contact.url} target="_blank" rel="noreferrer" title={contact.title}>
+                                        <FontAwesomeIcon icon={contact.icon} className="ml-4"/>
+                                    </a>
+                                )
+                            })}
                         </div>
                     </div>
                     
-                    <div className="mt-6 text-center sm:text-left">{userData.about}</div>
+                    <div className="mt-6 text-justify">{userData.about}</div>
                 </section>
 
                 <section id="projects-container" className="mt-24">
@@ -51,7 +36,21 @@ const HomePage = () => {
                     
                     <ul className="group">
                         {userData.projects.map((project) => {
-                            return <li className="sm:group-hover:opacity-30 sm:group-hover:hover:opacity-100 transition-all duration-500" key={project.title} ><ProjectCard url={project.url} githubURL={project.githubURL} image={getImage(project.title)} title={project.title} description={project.description} skills={project.skills} /></li>
+                            return (
+                                <li 
+                                    className="sm:group-hover:opacity-30 sm:group-hover:hover:opacity-100 transition-all duration-500" 
+                                    key={project.title} 
+                                >
+                                    <ProjectCard 
+                                        url={project.url} 
+                                        githubURL={project.githubURL} 
+                                        image={project.image}
+                                        title={project.title} 
+                                        description={project.description} 
+                                        skills={project.skills} 
+                                    />
+                                </li>
+                            )
                         })}
                     </ul>
 
