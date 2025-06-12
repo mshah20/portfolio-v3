@@ -20,8 +20,8 @@ const HomePage = () => {
                         <div className="text-2xl text-gray-300 mt-2 hover:*:text-emerald-400">
                             {userData.contact.map((contact) => {
                                 return (
-                                    <a href={contact.url} target="_blank" rel="noreferrer" title={contact.title}>
-                                        <FontAwesomeIcon icon={contact.icon} className="ml-4"/>
+                                    <a href={contact.url} target="_blank" rel="noreferrer" title={contact.title} className="ml-6">
+                                        <FontAwesomeIcon icon={contact.icon} />
                                     </a>
                                 )
                             })}
