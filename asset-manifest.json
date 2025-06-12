@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio-v3/static/css/main.abc3dd44.css",
-    "main.js": "/portfolio-v3/static/js/main.e7f69345.js",
+    "main.css": "/portfolio-v3/static/css/main.95864958.css",
+    "main.js": "/portfolio-v3/static/js/main.0747ac8b.js",
     "static/media/weather-search.png": "/portfolio-v3/static/media/weather-search.96376927c6202905667d.png",
     "static/media/patch-hq.png": "/portfolio-v3/static/media/patch-hq.635cfe790d8ddc764067.png",
     "static/media/eduverse.png": "/portfolio-v3/static/media/eduverse.9ddfada0798b8e207e27.png",
     "index.html": "/portfolio-v3/index.html",
-    "main.abc3dd44.css.map": "/portfolio-v3/static/css/main.abc3dd44.css.map",
-    "main.e7f69345.js.map": "/portfolio-v3/static/js/main.e7f69345.js.map"
+    "main.95864958.css.map": "/portfolio-v3/static/css/main.95864958.css.map",
+    "main.0747ac8b.js.map": "/portfolio-v3/static/js/main.0747ac8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.abc3dd44.css",
-    "static/js/main.e7f69345.js"
+    "static/css/main.95864958.css",
+    "static/js/main.0747ac8b.js"
   ]
 }
