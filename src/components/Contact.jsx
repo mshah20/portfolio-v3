@@ -29,9 +29,19 @@ const Contact = () => {
                     <ul className="flex flex-col items-center">
                         {userData.contact.map((contact) => {
                             return (
-                                <li className="w-[24px] mb-3">
-                                    <a href={contact.url} target="_blank" rel="noreferrer" className="flex items-center group float-right">
-                                        <span className="mx-2 opacity-0 group-hover:text-emerald-400 group-hover:opacity-100 transition-all duration-200">{contact.title}</span>
+                                <li 
+                                    key={contact.title}
+                                    className="w-[24px] mb-3"                                    
+                                >
+                                    <a 
+                                        href={contact.url} 
+                                        target="_blank" 
+                                        rel="noreferrer" 
+                                        className="flex items-center group float-right"
+                                    >
+                                        <span className="mx-2 opacity-0 group-hover:text-emerald-400 group-hover:opacity-100 transition-all duration-200">
+                                            {contact.title}
+                                        </span>                                        
                                         <FontAwesomeIcon icon={contact.icon} className="group-hover:text-emerald-400 text-2xl relative" />
                                     </a>
                                 </li>

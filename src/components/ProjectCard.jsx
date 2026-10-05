@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ url, githubURL, image, title, description, skills }) => {
     return (
-        <div className="mt-4 py-8 px-4 rounded-xl flex flex-col items-center sm:flex-row select-none bg-gradient-to-r hover:from-gray-900 hover:to-gray-800">
+        <div className="mt-4 py-8 px-4 rounded-xl flex flex-col items-center sm:flex-row select-none bg-gradient-to-r hover:from-gray-900 hover:to-gray-800 group/project-card">
             <div id="image-container" className="w-64 h-32">
                 <img src={image} alt="Project" className="w-64 h-32 min-w-64 rounded-lg"/>
             </div>
@@ -21,7 +21,19 @@ const ProjectCard = ({ url, githubURL, image, title, description, skills }) => {
                 
                 <ul className="flex flex-wrap text-xs justify-center sm:justify-start">
                     {skills.map((skill) => {
-                        return <li key={skill} className="px-3 py-1 mx-1 mt-2 rounded-xl text-emerald-400 border border-emerald-400 bg-gradient-to-tr hover:text-gray-900 hover:from-green-500 hover:to-cyan-500 duration-200 ease-out">{skill}</li>
+                        return (
+                            <li 
+                                key={skill} 
+                                className="px-3 py-1 mx-1 mt-2 text-emerald-400 border-l border-emerald-400 bg-gradient-to-tr 
+                                    group-hover/project-card:text-gray-900 
+                                    group-hover/project-card:from-green-500 
+                                    group-hover/project-card:to-cyan-500 
+                                    group-hover/project-card:rounded-md
+                                    duration-200 ease-in-out"                                
+                            >
+                                {skill}
+                            </li>
+                        )
                     })}
                 </ul>
             </div>

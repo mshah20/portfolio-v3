@@ -1,3 +1,4 @@
+import journeyPage from "./media/journey.png";
 import eduversePage from "./media/eduverse.png";
 import patchHQPage from "./media/patch-hq.png";
 import weatherPage from "./media/weather-search.png";
@@ -8,8 +9,13 @@ export const userData = {
     "name": "Mueed Shah",
     "jobTitle": "Software Engineer",
     "company": "myhome",
-    "about": "Achieved my Bachelor of Science in Computer Science from Florida International University (FIU). Always eager to learn and grow—currently exploring new projects to push my limits and make an impact. Always happy to connect and collaborate!",
+    "about": "Achieved my Bachelor of Science in Computer Science from Florida International University (FIU). Always eager to learn and grow. Currently exploring new projects to push my limits and make an impact. Happy to connect and collaborate!",
     "projects": [{
+        "title": "Journey",
+        "image": journeyPage,
+        "description": "Improve your job search by getting ahead of the curve. We provide the tools, you choose the path.",
+        "skills": ["React", "Typescript", "Node", "Docker", "Firestore"]
+    }, {
         "githubURL": "https://github.com/mshah20/eduverse",
         "title": "Eduverse",
         "image": eduversePage,

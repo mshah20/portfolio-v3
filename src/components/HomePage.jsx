@@ -20,7 +20,14 @@ const HomePage = () => {
                         <div className="text-2xl text-gray-300 mt-2 hover:*:text-emerald-400">
                             {userData.contact.map((contact) => {
                                 return (
-                                    <a href={contact.url} target="_blank" rel="noreferrer" title={contact.title} className="ml-6">
+                                    <a 
+                                        href={contact.url} 
+                                        target="_blank" 
+                                        rel="noreferrer" 
+                                        title={contact.title} 
+                                        key={contact.title} 
+                                        className="ml-6"
+                                    >
                                         <FontAwesomeIcon icon={contact.icon} />
                                     </a>
                                 )
@@ -69,7 +76,18 @@ const HomePage = () => {
 
                     <ul className="group">
                         {userData.courses.map((course) => {
-                            return <li className="sm:group-hover:opacity-70 sm:group-hover:hover:opacity-100 transition-all duration-500" key={course.title}><CourseCard title={course.title} languages={course.languages} skills={course.skills} /></li>
+                            return (
+                                <li 
+                                    className="sm:group-hover:opacity-70 sm:group-hover:hover:opacity-100 transition-all duration-500" 
+                                    key={course.title}
+                                >
+                                    <CourseCard 
+                                        title={course.title} 
+                                        languages={course.languages} 
+                                        skills={course.skills} 
+                                    />
+                                </li>
+                            )
                         })}
                     </ul>
                 </section>
@@ -79,7 +97,18 @@ const HomePage = () => {
 
                     <ul>
                         {userData.certifications.map((certification) => {
-                            return <li key={certification.title}>{<CertificationCard title={certification.title} status={certification.status} company={certification.company} link={certification.link} />}</li>
+                            return (
+                                <li 
+                                    key={certification.title}
+                                >
+                                    {<CertificationCard 
+                                        title={certification.title} 
+                                        status={certification.status} 
+                                        company={certification.company} 
+                                        link={certification.link} 
+                                    />}
+                                </li>
+                            )
                         })}
                     </ul>
                 </section>
